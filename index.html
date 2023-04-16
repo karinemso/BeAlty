@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeAlty!</title>
+    <link rel="shortcut icon" href="assets/Lipstick.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="container__titulo">
+          <h1 class="titulo">BEALTY!</h1> 
+          <div class="hamburguer" id="hamburguer">
+              <div class="hamburguer__linha"></div>
+              <div class="hamburguer__linha"></div>
+              <div class="hamburguer__linha"></div>
+          </div>
+        </div>
+        <div> 
+          <ul class="menu" id="menu"> 
+            <li class = 'menu__link'><a href="#Home">About</a></li>
+            <li class = 'menu__link'><a href="#New">New Collection</a></li>
+            <li class = 'menu__link'><a href="#Find">Find Us</a></li>
+          </ul>
+      </div>
+      </div>
+
+    </header>
+
+    <main>
+      <div class="container" id="Home">
+        <div class="container__texto">
+            <h2>We're Alt! We're BeAlty!</h2>
+            <h3>We're the new makeup brand, who is acting on the beauty revolution!</h3>
+          </div>
+
+        <img class="container__imagem__img" src="assets/cyberpunkgirl.png"></img>
+      
+      </div>
+
+      <div class="container2" id="New">
+          <div class="container__texto2">
+          <h2>NeonAlt Colors</h2>
+          <h3>Our new Collection translate de power of the woman on technology!
+              Powerfull and colorful with a touch of the city ligths!
+          </h3>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="swiper">
+        <div><div class="swiper-pagination"></div></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="slide__img" src="assets/model.png" alt=""></div>
+          <div class="swiper-slide"><img class="slide__img"src="assets/greenmake.png" alt=""></div>
+          <div class="swiper-slide"><img class="slide__img"src="assets/cyber2.png" alt=""></div>
+        </div>
+      </div>
+    </main>
+   
+    <footer id="Find">
+      <div class="container">
+        <div class="container__titulo"><h1 class="titulo">BEALTY!</h1> 
+        </div>
+        <div> 
+          <ul> 
+            <li class = 'menu__link'>@BeAlty</li>
+            <li class = 'menu__link'>www.bealty.com</li>
+            <li class = 'menu__link'>bealty@makeup.com</li>
+          </ul>
+      </div>
+  
+  
+    </div>
+    </footer> 
+
+    <script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+  
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay:true,
+  autoplay: {
+
+    delay: 5000, // tempo de espera em milissegundos entre cada slide
+    disableOnInteraction: false, // define se o autoplay deve pausar quando o usuário interagir com o swiper
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type:'progressbar',
+    progressBar: {
+      background: '#00a5ac', // muda a cor da progress bar para vermelho
+      // outras opções de estilo da progress bar podem ser configuradas aqui
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+
+});
+  </script>
+  </body>
+</html>
